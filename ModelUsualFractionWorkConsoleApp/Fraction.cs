@@ -36,11 +36,12 @@ namespace ModelUsualFractionWorkConsoleApp
             if (Numerator % Denominator == 0)
             {
                 Numerator /= Denominator;
+                Denominator = 1;
             }
             else if (Denominator % Numerator == 0)
-            {
-                Numerator /= Numerator;
+            {               
                 Denominator /= Numerator;
+                Numerator = 1;
             }
             else
             {
